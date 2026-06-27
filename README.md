@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<img src="src/assets/icons/wordmark.png" alt="Garap" width="220"/>
 
-## Get started
+**Track your bounties. Know your worth. Get paid.**
 
-1. Install dependencies
+A mobile-first bounty tracker for freelancers who live on Hackathons, Web3 Airdrops, Design Contests, and gig platforms — built for people who work entirely from their phone.
 
-   ```bash
-   npm install
-   ```
+[![Release](https://img.shields.io/github/v/release/limalime/garap?include_prereleases&label=release)](https://github.com/limalime/garap/releases)
+[![License: MIT](https://img.shields.io/github/license/limalime/garap?style=plastic&logo=MIT
+)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Android-3DDC84.svg)](#)
+[![Built with Expo](https://img.shields.io/badge/built%20with-Expo-000020.svg)](https://expo.dev)
 
-2. Start the app
+</div>
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📲 Download
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Source | Link |
+|---|---|
+| **GitHub Releases** (recommended) | [Latest Release](https://github.com/limalime/garap/releases/latest) |
+| **APKPure** | [Garap on APKPure](#) |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+> Garap is currently in **beta preview**. Expect occasional rough edges — see [Known Issues](#-known-issues) below.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📸 Screenshots
 
-```bash
-npm run reset-project
-```
+<div align="center">
+<img src="https://raw.githubusercontent.com/limalime/limalime/refs/heads/main/images/garap/garap-mock1.png" width="500" alt="mock1" />
+<img src="https://raw.githubusercontent.com/limalime/limalime/refs/heads/main/images/garap/garap-mock2.png" width="500" alt="mock2" />
+<img src="https://raw.githubusercontent.com/limalime/limalime/refs/heads/main/images/garap/garap-mock3.png" width="500" alt="mock3" />
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ✨ What is Garap?
 
-To learn more about developing your project with Expo, look at the following resources:
+If you find work through X, Medium, Discord, or wherever bounties get posted — and you're tired of Notion getting slower every month or losing track of deadlines in a notebook — Garap is built specifically for that workflow.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **Track every bounty** — name, platform, deadline, prize, status, category, submission link, source link, and notes, all in one place
+- **See your real earnings** — prizes in ETH, SOL, BTC, USDC, USDT, or IDR are automatically converted to USD so your revenue dashboard always reflects what you actually earned
+- **Never miss a deadline** — calendar sync, countdown timers down to the hour, and reminders before things are due
+- **Built for one-handed, phone-only use** — no desktop required, ever
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🧩 Core Features
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Dashboard** — total revenue (synced to USD), earnings chart, quick stats, recent bounties
+- **Projects** — full bounty list with search, status filters, category filters, swipe actions
+- **Notes** — freeform notes, optionally linked to a specific bounty
+- **Calendar** — month view of deadlines, color-coded by urgency, with device calendar sync and reminders
+- **Settings** *(hidden, accessible via the top-bar icon only)* — profile, theme, language (EN/ID), notification controls, data export (CSV/JSON), account management
+
+### Authentication
+Sign in with **Email**, **Google**, or **GitHub**.
+
+### Multi-Currency Support
+Prizes can be logged in **USDC, ETH, BTC, USD, IDR, SOL, or USDT**. When a bounty is marked **Won**, its value is automatically converted to USD using live exchange rates and added to your revenue total.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Expo](https://expo.dev) / React Native |
+| Navigation | Expo Router (file-based) |
+| State | Zustand |
+| Backend | Supabase (Auth, Database, Storage, Realtime) |
+| Styling | NativeWind (Tailwind CSS for React Native) |
+| Charts | Victory Native |
+| Animations | Lottie |
+
+---
+
+## 🚧 Project Status
+
+Garap is **actively developed** and currently in **beta preview**. Core flows (auth, bounty tracking, revenue sync, calendar, settings) are functional and have been tested on physical Android devices via EAS development builds.
+
+### Known Issues
+This release may include a small number of known issues currently being addressed. If you run into something that isn't already tracked, please [open an issue](https://github.com/limalime/garap/issues) — bug reports are genuinely welcome.
+
+---
+
+## 📍 TODO
+
+- [ ] iOS support
+- [ ] Release on Google Play store & Apple App store
+- [ ] Share view apps
+- [ ] Instant bounty research via AI/Manual
+- [ ] Bounty analytics & win-rate insights by category/platform
+- [ ] Bounty templates for recurring submission types
+- [ ] Optional team/collaboration mode
+- [ ] Tax/earnings report export
+- [ ] Integrate with crypto wallet
+
+---
+
+## 🤝 Contributing
+
+Issues and pull requests are welcome. If you're planning a larger change, please open an issue first to discuss it before submitting a PR.
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Open a pull request
+
+---
+
+## 📄 License
+
+Garap is licensed under the **MIT License**.
+See [LICENSE](LICENSE) for the full text.
+
+---
+
+## 🙏 Acknowledgements
+
+Built solo for freelancers who work the same way.
+
+<div align="center">
+
+If Garap saves you time, consider [buying me a coffee](https://buymeacoffee.com/garap) ☕
+
+</div>
